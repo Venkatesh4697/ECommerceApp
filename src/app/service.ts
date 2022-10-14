@@ -10,6 +10,8 @@ import { User } from './user';
 @Injectable({
     providedIn: 'root'
   })
+
+//APIs written in NodeJS Backend
 export class Service {
   private registerUrl = 'http://localhost:8080/registerUser';
   private loginUrl = 'http://localhost:8080/login';
@@ -45,6 +47,7 @@ export class Service {
   
   //For Demo Commit
   
+
   constructor(private httpClient: HttpClient) { }
 
   saveUser(user: User): Observable<User> {
