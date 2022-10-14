@@ -42,6 +42,9 @@ export class Service {
   private allDeals='http://localhost:8080/getDeals';
   private allDealsItems='http://localhost:8080/getAllDealItems';
 
+  
+  //For Demo Commit
+  
   constructor(private httpClient: HttpClient) { }
 
   saveUser(user: User): Observable<User> {
